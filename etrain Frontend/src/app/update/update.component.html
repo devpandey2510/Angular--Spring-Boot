@@ -1,0 +1,11 @@
+<p>update works!</p>
+<form>
+    Train Name:<input type="text" id="name" value={{tt.name}} #name><br>
+    Train No.:<input type="number" id="trainno" value={{tt.trainNo}} #trainno><br>
+    Source Station:<input type="text" id="src" value={{tt.sourceSt}} #src><br>
+    Destination Station:<input type="text" id="dest" value={{tt.destSt}} #dest><br>
+    Arrival Time:<input type="number" id="arrtime" value={{tt.arrivalTime}} #arrtime><br>
+    Destination Time:<input type="number" id="desttime" value={{tt.destTime}} #desttime><br>
+    Ticket Price:<input type="text" id="tckprice" value={{tt.TicketPrice}} #tckprice><br>
+<input type="button" value="edit" (click)="edittrain(name.value,trainno.value,src.value,dest.value,arrtime.value,desttime.value,tckprice.value)">
+</form>

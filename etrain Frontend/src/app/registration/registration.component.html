@@ -1,0 +1,12 @@
+<p>registration works!</p>
+
+<form>
+    Train Name:<input type="text" id="name" #name><br>
+    Train No.:<input type="number" id="trainno" #trainno><br>
+    Source Station:<input type="text" id="src" #src><br>
+    Destination Station:<input type="text" id="dest" #dest><br>
+    Arrival Time:<input type="number" id="arrtime" #arrtime><br>
+    Destination Time:<input type="number" id="desttime" #desttime><br>
+    Ticket Price:<input type="text" id="tckprice" #tckprice><br>
+<input type="button" value="newtrain" (click)="addnewtrain(name.value,trainno.value,src.value,dest.value,arrtime.value,desttime.value,tckprice.value)">
+</form>
